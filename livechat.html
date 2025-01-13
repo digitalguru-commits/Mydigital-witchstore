@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce Website</title>
+  <link rel="stylesheet" href="livechat.css">
+</head>
+<body>
+  <header>
+    <h1>My Digital-Witch Store</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="products">
+      <h2>Products</h2>
+      <div class="product">
+        <h3>IT Support</h3>
+        <p>$10.00</p>
+        <button onclick="addToCart('IT Support', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Cloud Computing</h3>
+        <p>$20.00</p>
+        <button onclick="addToCart('Cloud Computing', 20)">Add to Cart</button>
+      </div>
+    </section>
+    
+    <section id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="total-price">0.00</span></p>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 My Digital-Witch Store</p>
+  </footer>
+  
+  <!-- Include the HubSpot Live Chat -->
+  <script async defer src="<!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/48906330.js"></script></script>
+  <script src="livechat.js"></script><!-- End of HubSpot Embed Code -->
+</body>
+</html>
+
